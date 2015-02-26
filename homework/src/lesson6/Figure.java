@@ -1,21 +1,23 @@
 package lesson6;
 
+import lesson7.Drawable;
+import lesson7.Informable;
+
+//abstract public class Figure implements Drawable, Informable{
 abstract public class Figure {
-
 	public double  perimeter;
-	public double  square;
-
+	public double  area;
+ 
 	public Figure() {
 
 	}
 
-	public double getSquare() {
-		return square;
-	}
+	public abstract double getArea() ;
+	
+	public abstract double getPerimeter() ;
 
-	public double getPerimeter() {
-		 return perimeter;
+	public  void printFigureInfo()
+	{
+		System.out.println(getClass().getSimpleName() + " perimeter = "+getPerimeter()+", square = " + getArea());
 	}
-
-	abstract public void printFigureInfo();
 }

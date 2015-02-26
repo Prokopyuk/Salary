@@ -8,9 +8,8 @@ public class Triangle extends Figure {
 	public Triangle(double cathetusA, double cathetusB) {
 		this.cathetusA = cathetusA;
 		this.cathetusB = cathetusB;
-
-		perimeter = calcPerimeter();
-		square = (cathetusA + cathetusB) / 2;
+	
+		
 	}
 
 	// get &set Cathet A
@@ -21,8 +20,7 @@ public class Triangle extends Figure {
 
 	public void setCathetusA(double cathetusA) {
 		this.cathetusA = cathetusA;
-		square = (cathetusA + cathetusB) / 2;
-		perimeter = calcPerimeter();
+		
 	}
 
 	// get &set Cathet B
@@ -32,8 +30,7 @@ public class Triangle extends Figure {
 
 	public void setCathetusB(double cathetusB) {
 		this.cathetusB = cathetusB;
-		square = (cathetusA + cathetusB) / 2;
-		perimeter = calcPerimeter();
+		
 	}
 
 	// make perimeter, Square and Print info
@@ -44,9 +41,18 @@ public class Triangle extends Figure {
 		return hypotenuse + cathetusA + cathetusB;
 	}
 
-	public void printFigureInfo() {
-		System.out.println("Triangle cathetus A lenght is " + cathetusA
-				+ " , cathetus B lenght is " + cathetusB + ", perimeter is "
-				+ perimeter + ", square is  " + square);
+
+	@Override
+	public double getArea() {
+		// TODO Auto-generated method stub
+		return ((cathetusA + cathetusB) / 2);
 	}
+
+	@Override
+	public double getPerimeter() {
+		// TODO Auto-generated method stub
+		return calcPerimeter();
+	}
+
+
 }

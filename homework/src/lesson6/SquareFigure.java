@@ -6,8 +6,6 @@ public class SquareFigure extends Figure {
 
 	public SquareFigure(double side) {
 		this.side = side;
-		perimeter = side * 4;
-		square = side * side;
 	}
 
 	public double getSide() {
@@ -16,13 +14,20 @@ public class SquareFigure extends Figure {
 
 	public void setSide(double side) {
 		this.side = side;
-		perimeter = side * 4;
-		square = side * side;
+
 	}
 
-	public void printFigureInfo() {
-		System.out.println("Square  side is  " + side + ", perimeter is "
-				+ perimeter + ", square is  " + square);
+	
+	@Override
+	public double getArea() {
+		// TODO Auto-generated method stub
+		return side * side;
+	}
+
+	@Override
+	public double getPerimeter() {
+		// TODO Auto-generated method stub
+		return side * 4;
 	}
 
 }
