@@ -3,7 +3,7 @@ package employee;
 public class Manager extends Employee {
 
 	
-	private int  stavka = 5;
+	private int  rate = 5;
 	
 	public Manager(){
 		super();
@@ -18,19 +18,19 @@ public class Manager extends Employee {
 
 	}
 	@Override
-	public int  getStavka(){
-		return  stavka;
+	public int  getRate(){
+		return  rate;
 	}
 	
 	@Override
-	public void setStavka(int stavka){
-		this.stavka = stavka;
+	public void setRate(int rate){
+		this.rate = rate;
 	}
 
 	@Override
 	public double getSalary() {
 		
-		return stavka*daysCount;
+		return rate*daysCount;
 	}
 	
 		

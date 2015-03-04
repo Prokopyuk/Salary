@@ -2,7 +2,7 @@ package employee;
 
 public class Boss extends Employee{
 
-	private int stavka = 10;
+	private int rate = 10;
 	
 	public Boss(){
 		super();
@@ -18,17 +18,17 @@ public class Boss extends Employee{
 	@Override
 	public double getSalary() {
 		// TODO Auto-generated method stub
-		return stavka*daysCount;
+		return rate*daysCount;
 	}
 	
 	@Override
-	public int  getStavka(){
-		return  stavka;
+	public int  getRate(){
+		return  rate;
 	}
 	
 	@Override
-	public void setStavka(int stavka){
-		this.stavka = stavka;
+	public void setRate(int rate){
+		this.rate = rate;
 	}
 	
 }

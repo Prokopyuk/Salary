@@ -4,7 +4,7 @@ abstract public class Employee {
 
 	protected String name;
 	protected int daysCount;
-	protected int stavka = 2;
+	protected int rate = 2;
 
 
 	public Employee() {
@@ -31,18 +31,18 @@ abstract public class Employee {
 		this.daysCount = daysCount;
 	}
 	
-	public int getStavka() {
-		return stavka;
+	public int getRate() {
+		return rate;
 	}
 
-	public void setStavka(int stavka) {
-		this.stavka = stavka;
+	public void setRate(int rate) {
+		this.rate = rate;
 	}
 
 	
 	public  void printEmployeeInfo()
 	{
-		System.out.println(getClass().getSimpleName() + " name  is  "+getName()+", working days  - " + getDaysCount()+ " , stavka  - "+getStavka()+" and salary is " +getSalary());
+		System.out.println(getClass().getSimpleName() + " name  is  "+getName()+", working days  - " + getDaysCount()+ " , rate  - "+getRate()+" and salary is " +getSalary());
 	}
 
 	
