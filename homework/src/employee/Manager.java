@@ -6,7 +6,7 @@ public class Manager extends Employee {
 	private int  rate = 5;
 	
 	public Manager(){
-		super();
+		
 	}
 	
 	public Manager(String name, int daysCount){

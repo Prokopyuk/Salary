@@ -5,8 +5,7 @@ public class Boss extends Employee{
 	private int rate = 10;
 	
 	public Boss(){
-		super();
-	}
+		}
 	
 	public Boss(String name, int daysCount){
 		this.name=name;
